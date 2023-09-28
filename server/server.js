@@ -17,15 +17,15 @@ const app = express();
 //middlewares
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin: 'https://samvida.onrender.com',}));
 app.use("/uploads", express.static('uploads'))
 
 //routes
-app.use("/api/v1/users", require("./routes/userRoute"));
-app.use("/api/v1/crops", require("./routes/cropRoute"));
-app.use("/api/v1/contracts", require("./routes/contractRoutes"));
-app.use("/api/v1/farmer", require("./routes/farmerRoutes"));
-app.use("/api/v1/company", require("./routes/companyRoutes"));
+app.use("https://samvida.onrender.com/api/v1/users", require("./routes/userRoute"));
+app.use("https://samvida.onrender.com/api/v1/crops", require("./routes/cropRoute"));
+app.use("https://samvida.onrender.com/api/v1/contracts", require("./routes/contractRoutes"));
+app.use("https://samvida.onrender.com/api/v1/farmer", require("./routes/farmerRoutes"));
+app.use("https://samvida.onrender.com/api/v1/company", require("./routes/companyRoutes"));
 
 //port
 const PORT = 8080 || process.env.PORT;
