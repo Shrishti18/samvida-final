@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const farmerProfileSchema = new mongoose.Schema({
     landArea: { type: String },
@@ -11,4 +11,4 @@ const farmerProfileSchema = new mongoose.Schema({
 
 const FarmerProfile = mongoose.model("farmer", farmerProfileSchema);
 
-module.exports = FarmerProfile;
+export default FarmerProfile;

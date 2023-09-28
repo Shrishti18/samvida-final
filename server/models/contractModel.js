@@ -1,5 +1,5 @@
 // Contract.js
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const ContractSchema = new mongoose.Schema({
     cropId: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'crops' },
@@ -14,4 +14,4 @@ const ContractSchema = new mongoose.Schema({
 
 const Contract = mongoose.model("contract", ContractSchema);
 
-module.exports = Contract;
+export default Contract;

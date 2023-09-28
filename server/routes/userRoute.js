@@ -1,9 +1,11 @@
-const express = require("express");
-const {
+import express from 'express';
+import {
     loginController,
     registerController,
     getNameById,
-} = require("../controllers/userController");
+} from "../controllers/userController.js"; // Note the .mjs extension
+
+
 
 //router object
 const router = express.Router();
@@ -17,4 +19,4 @@ router.post("/register", registerController);
 
 router.get("/getname/:companyId", getNameById);
 
-module.exports = router;
+export default router

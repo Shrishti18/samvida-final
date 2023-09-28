@@ -1,8 +1,8 @@
-const Crop = require("../models/cropModel"); // Assuming your model is named "Contract"
-const User = require("../models/userModel"); // Assuming your user model is named "User"
+import Crop from "../models/cropModel.js"; // Assuming your model is named "Contract"
+import User from "../models/userModel.js"; // Assuming your user model is named "User"
 
 // Controller for creating a new crop
-const createCrop = async(req, res) => {
+export const createCrop = async(req, res) => {
     try {
         const { cropName, companyId } = req.body;
 
@@ -24,7 +24,7 @@ const createCrop = async(req, res) => {
     }
 };
 
-const getAllCrops = async(req, res) => {
+export const getAllCrops = async(req, res) => {
     try {
         const crops = await Crop.find();
         res.status(200).json(crops);
@@ -36,7 +36,7 @@ const getAllCrops = async(req, res) => {
 
 
 
-const getCropsByCompany = async(req, res) => {
+export const getCropsByCompany = async(req, res) => {
     try {
         const { companyId } = req.params;
 
@@ -49,7 +49,7 @@ const getCropsByCompany = async(req, res) => {
     }
 };
 
-const getCropsByCrops = async(req, res) => {
+export const getCropsByCrops = async(req, res) => {
     try {
         const { cropId } = req.params;
 
@@ -62,7 +62,7 @@ const getCropsByCrops = async(req, res) => {
     }
 };
 
-const createCropWithImage = async(req, res) => {
+export const createCropWithImage = async(req, res) => {
     console.log(req.file, 16)
     try {
         const {
@@ -105,4 +105,4 @@ const createCropWithImage = async(req, res) => {
     }
 };
 
-module.exports = { createCrop, getCropsByCompany, getAllCrops, getCropsByCrops, createCropWithImage };
+export default { createCrop, getCropsByCompany, getAllCrops, getCropsByCrops, createCropWithImage };

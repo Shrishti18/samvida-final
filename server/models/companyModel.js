@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const CompanyDetailsSchema = new mongoose.Schema({
     crops: { type: String },
@@ -10,4 +10,4 @@ const CompanyDetailsSchema = new mongoose.Schema({
 
 const CompanyProfile = mongoose.model("company", CompanyDetailsSchema);
 
-module.exports = CompanyProfile;
+export default CompanyProfile;

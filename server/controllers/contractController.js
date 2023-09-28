@@ -1,6 +1,6 @@
-const Contract = require("../models/contractModel");
+import Contract from "../models/contractModel.js";
 
-const createContract = async(req, res) => {
+export const createContract = async(req, res) => {
     try {
         const { cropId, companyId, farmerId } = req.body;
 
@@ -30,7 +30,7 @@ const createContract = async(req, res) => {
     }
 };
 
-const getContractsByCompanyAndCrop = async(req, res) => {
+export const getContractsByCompanyAndCrop = async(req, res) => {
     try {
         const { cropId, companyId } = req.params;
         let contracts = await Contract.findOne({ cropId: cropId, companyId: companyId });
@@ -43,7 +43,7 @@ const getContractsByCompanyAndCrop = async(req, res) => {
     }
 };
 
-const updatecontractbool = async(req, res) => {
+export const updatecontractbool = async(req, res) => {
     const { contractId } = req.params;
     const { farmerarray } = req.body;
 
@@ -59,7 +59,7 @@ const updatecontractbool = async(req, res) => {
     }
 };
 
-const getContractbooleanvalue = async(req, res) => {
+export const getContractbooleanvalue = async(req, res) => {
     const { cropId, companyId, farmerId } = req.params;
     try {
         // Find the contract that matches the cropId and companyId
@@ -77,7 +77,7 @@ const getContractbooleanvalue = async(req, res) => {
     }
 };
 
-const getContractedCropsbyeachfarmer = async(req, res) => {
+export const getContractedCropsbyeachfarmer = async(req, res) => {
     try {
         const { farmerId } = req.params;
 
@@ -98,7 +98,7 @@ const getContractedCropsbyeachfarmer = async(req, res) => {
     }
 };
 
-const getDatabycontractid = async(req, res) => {
+export const getDatabycontractid = async(req, res) => {
     try {
         const { contractId } = req.params;
 
@@ -120,13 +120,8 @@ const getDatabycontractid = async(req, res) => {
 };
 
 
-
-
-
-
-
-
-module.exports = {
+export default
+{
     createContract,
     getContractsByCompanyAndCrop,
     updatecontractbool,

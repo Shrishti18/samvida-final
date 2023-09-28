@@ -1,9 +1,9 @@
-const express = require("express");
-const multer = require('multer');
+import express from 'express';
+import multer from 'multer';
 const upload = multer({ dest: 'uploads/' })
 
 const router = express.Router();
-const { createCrop, getCropsByCompany, getAllCrops, getCropsByCrops, createCropWithImage } = require("../controllers/cropController");
+import { createCrop, getCropsByCompany, getAllCrops, getCropsByCrops, createCropWithImage } from "../controllers/cropController.js";
 
 // Route for creating a new crop
 router.post("/addcrop", createCrop);
@@ -18,4 +18,4 @@ router.get("/:companyId", getCropsByCompany);
 router.get("/cropfilter/:cropId", getCropsByCrops);
 
 
-module.exports = router;
+export default router

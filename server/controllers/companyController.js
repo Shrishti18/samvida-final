@@ -1,6 +1,6 @@
-const CompanyProfile = require("../models/companyModel");
+import CompanyProfile from "../models/companyModel.js";
 
-const companyprofile = async(req, res) => {
+export const companyprofile = async(req, res) => {
     try {
         const { crops, location, phoneNumber, companyName, companyId } = req.body;
         const companyData = {
@@ -20,7 +20,7 @@ const companyprofile = async(req, res) => {
         res.status(500).json({ message: "Internal server error" });
     }
 };
-const getCompanyProfile = async(req, res) => {
+export const getCompanyProfile = async(req, res) => {
     const companyId = req.params.companyId;
     try {
         const companyProfile = await CompanyProfile.findOne({ companyId: companyId });
@@ -34,7 +34,7 @@ const getCompanyProfile = async(req, res) => {
     }
 };
 
-const updateCompanyProfile = async(req, res) => {
+export const updateCompanyProfile = async(req, res) => {
     const companyId = req.params.companyId;
     const updatedProfileData = req.body;
 
@@ -54,4 +54,4 @@ const updateCompanyProfile = async(req, res) => {
     }
 };
 
-module.exports = { companyprofile, getCompanyProfile, updateCompanyProfile };
+export default {companyprofile, getCompanyProfile, updateCompanyProfile };

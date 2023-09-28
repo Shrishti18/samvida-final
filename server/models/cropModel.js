@@ -1,5 +1,5 @@
 // Contract.js
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const CropSchema = new mongoose.Schema({
     cropName: { type: String, required: true },
@@ -15,5 +15,4 @@ const CropSchema = new mongoose.Schema({
 });
 
 const Crop = mongoose.model("crops", CropSchema);
-
-module.exports = Crop;
+export default Crop;

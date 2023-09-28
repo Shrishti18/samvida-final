@@ -1,6 +1,6 @@
-const FarmerProfile = require("../models/farmerModel");
+import FarmerProfile from "../models/farmerModel.js";
 
-const createFarmerProfile = async(req, res) => {
+export const createFarmerProfile = async(req, res) => {
     try {
         // Create a new farmer profile document based on the submitted form data
         const { landArea, soilType, location, phoneNumber, fullName, farmerId } = req.body;
@@ -24,7 +24,7 @@ const createFarmerProfile = async(req, res) => {
     }
 };
 
-const getFarmerProfile = async(req, res) => {
+export const getFarmerProfile = async(req, res) => {
     const { farmerId } = req.params;
 
     try {
@@ -42,7 +42,7 @@ const getFarmerProfile = async(req, res) => {
 };
 
 
-const updateFarmerProfile = async(req, res) => {
+export const updateFarmerProfile = async(req, res) => {
     const { farmerId } = req.params;
     const updatedProfileData = req.body;
 
@@ -63,4 +63,4 @@ const updateFarmerProfile = async(req, res) => {
     }
 };
 
-module.exports = { createFarmerProfile, getFarmerProfile, updateFarmerProfile };
+export default { createFarmerProfile, getFarmerProfile, updateFarmerProfile };
