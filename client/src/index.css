@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+:root {
+    --greyOne: #f3f3f3;
+    --greyTwo: #7C7C7C;
+    --greyThree: #434343;
+    --greyFour: #0f0f0f;
+    --greenOne: #87CF27;
+    --greenTwo: #0B2E1C;
+    --backdrop-filter: blur(20px);
+    --border-radius-button: 4px;
+    --border-radius-card: 10px;
+    --font-size-heading: 2rem;
+    --font-size-semibold: 1.125rem;
+    --font-size-medium: .9375rem;
+    --font-size-text: .75rem;
+    --font-weight-heading: 900;
+    --font-weight-semibold: 700;
+    --font-weight-medium: 400;
+    --font-weight-text: 300;
+}
+
+h1 {
+    color: var(--greyFour);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-heading);
+}
+
+.content {
+    height: 80vh;
+}
+
+.resgister-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+button{
+    padding: 2vh 2vw 2vh 2vw;
+    font-weight: 400;
+    max-width: 40vw;
+    margin-top: 2vh;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    color: #f3f3f3;
+}

@@ -1,0 +1,60 @@
+.register-page{
+    display: flex;
+}
+.left-side Form {
+    margin-left: 12%;
+    margin-top: 10vh;
+}
+.left-side {
+    background: var(--greyGradient);
+    width: 50%;
+    height: 100vh;
+    backdrop-filter: var(--backdrop-filter);
+    border-radius: var(--border-radius-card);
+}
+.right h1{
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+}
+.left-side Form p{
+    color: var(--greyFour);
+    font-size: 16px;
+    font-weight: 600;
+}
+.left-side Form input{
+    border: solid var(--greyFour) 2px;
+    padding: 2vh 6vw 2vh 1vw;
+    width: 40vw;
+}
+.left-side Form Button{
+    padding: 2vh 36vw 2vh 2vw;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    max-width: 40vw;
+}
+.left-side Form select{
+    border: solid var(--greyFour) 2px;
+    padding: 2vh 6vw 2vh 1vw;
+    width: 40vw;
+    margin-bottom: 2vh;
+}
+.loginAsk a{
+    width: 70%;
+}
+.loginAsk button{
+    padding: 2vh 36vw 2vh 2vw;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    max-width: 40vw;
+    margin-top: 2vh;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+}
+.loginAsk Button:hover{
+    background-color: rgb(15, 15, 15);
+}

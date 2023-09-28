@@ -1,0 +1,6 @@
+.lay-out{
+    display: flex;
+}
+.content{
+    margin-left: 20vw;
+}

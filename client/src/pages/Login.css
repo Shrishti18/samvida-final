@@ -1,0 +1,52 @@
+.content{
+    display: flex;
+    height: 100vh;
+}
+.rightSide {
+    background: var(--greyGradient);
+    width: 50%;
+    height: 100vh;
+    backdrop-filter: var(--backdrop-filter);
+    border-radius: var(--border-radius-card);
+    padding-left: 8vw;
+    padding-top: 10vh;
+}
+.leFt h1{
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1vh;
+}
+.form p{
+    margin-bottom: 1vh;
+    color: var(--greyFour);
+    font-size: 16px;
+    font-weight: 600;
+}
+.form input{
+    border: solid var(--greyFour) 2px;
+    padding: 2vh 6vw 2vh 1vw;
+    width: 40vw;
+}
+.form Button{
+    padding: 2vh 36vw 2vh 2vw;
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    max-width: 40vw;
+    margin-top: 8vh;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+}
+.form Button:hover{
+    background-color: rgb(15, 15, 15);
+}
+.title h2{
+    font-size: var(--font-size-semibold);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 8vh;
+}
+.registerBtn Link{
+    color: var(--greyFour);
+}

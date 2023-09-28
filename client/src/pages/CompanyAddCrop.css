@@ -1,0 +1,29 @@
+.addCrop form input{
+    border: solid var(--greyFour) 2px;
+    padding: 2vh 6vw 2vh 1vw;
+    width: 40vw;
+    margin-bottom: 2vh;
+}
+.addCrop form button{
+    font-weight: 400;
+    max-width: 40vw;
+    margin-top: 8vh;
+    background-color: black;
+    border: none;
+    border-radius: 0;
+    margin-right: 24vw;
+    margin-bottom: 2vh;
+}
+.addCrop form label{
+    font-weight: 600;
+}
+.addCrop form{
+    margin-top: 2vh;
+    margin-left: 14vw;
+}
+.addCrop h2{
+    margin-top: 2vh;
+    margin-left: 14vw;
+    font-size: 24px;
+    font-weight: 600;
+}

@@ -1,0 +1,93 @@
+/* FarmerSearch.css */
+.crop-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.crop-card {
+    background-color: #fcfcfc;
+    padding: 2vh 1vw;
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.crop-card img{
+    width: 16vw !important;
+    margin-bottom: 1vh;
+}
+.crop-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+}
+
+.crop-card a {
+    margin-top: 2vh;
+    color: #419600;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: transparent;
+    text-decoration: underline;
+    font-weight: 700;
+    padding: 0px;
+}
+
+.crop-card a:hover {
+    text-decoration: none;
+    color: var(--greyFour);
+    font-weight: 400;
+}
+.top-farmer h1 {
+    font-size: var(--font-size-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: var(--greyFour);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.bottom-farmer {
+    max-width: 60vw;
+}
+.bottom-farmer h2 {
+    font-size: var(--font-size-semibold);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 2vh;
+}
+
+.crop-cards {
+    width: 60vw;
+}
+
+.search-container input {
+    background-color: #f8f8f8;
+}
+.farmer-dashboard{
+    padding: 2vh 2vw;
+    height: auto;
+    width: auto;
+}
+.search-container{
+    display: flex;
+}
+.search-container Button{
+    margin-top: 0vh;
+    line-height: 0vh;
+    padding: 1vh 4vw;
+    height: 8vh !important;
+}
+.search-container input{
+    padding: 1vh 4vw 1vh 1vw;
+    width: 60vw;
+    margin: 0px;
+    background-color: linear-gradient(180deg, #F7FFF0 0%, rgba(224, 247, 205, 0.00) 100%);
+    color: var(--greyFour);
+    border: 1px solid var(--greyThree);
+}
+.search-container input:focus{
+    border: 1px solid #7C7C7C;
+}
+/* Additional styles can be added here based on your design */

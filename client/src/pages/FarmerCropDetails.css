@@ -1,0 +1,30 @@
+.FarmerCropDetails h2{
+    margin-top: 8vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+.FarmerCropDetails{
+    margin-left: 2vw;
+}
+.FarmerCropCard{
+    padding: 2vh 1vw;
+    background-color: #f7f7f7;
+    margin-top: 2vh;
+}
+.FarmerCropCard img{
+    width: 18vw;
+}
+.FarmerCropCardCropSpecs{
+    display: flex;
+    text-align: center;
+    gap: 2vw;
+}
+.FarmerCropCardCropSpecs p span{
+    font-weight: 600;
+}
+.FarmerCropCard p.CropName{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 2vh;
+}

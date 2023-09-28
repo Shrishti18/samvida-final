@@ -1,0 +1,56 @@
+
+li{
+    font-size: var(--font-size-semibold);
+    color: var(--greyFour);
+}
+p{
+    color: var(--greyFour);
+}
+.nav-link{
+    font-size: var(--font-size-medium);
+    color: var(--greyFour);
+    font-weight: var(--font-weight-medium);
+}
+.btn-normal{
+    background: var(--greyFour);
+    border: none;
+    color: var(--greyOne);
+    padding: 2vh 12vw 2vh 1vw;
+    cursor: pointer;
+    font-size: var(--font-size-semibold);
+    font-weight: var(--font-weight-medium);
+    border-radius: 0px !important;
+}
+Button{
+    margin-top: 40vh;
+}
+@media screen and (min-width: 992px) {
+    .navbar .container-fluid,
+    .navbar-expand-lg .navbar-collapse,
+    .navbar-expand-lg .navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .navbar {
+      width: 20%;
+      height: 100vh;
+      align-items: flex-start;
+    }
+    .navbar-brand {
+      margin-left: 0.5rem;
+    }
+  }
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+.name-nav{
+    margin-bottom: 8vh;
+}
+.navbar-brand{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.navbar{
+    position: fixed;
+}
